@@ -5,36 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      html {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+      }
+
+      h2,
+      h3,
+      footer {
+        font-family: sans-serif;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 16px;
+      }
+
+      li {
+        list-style: none;
+        padding: 0;
+      }
+      .links {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .links section {
+        flex-grow: 1;
+        width: 100%;
+      }
+
+      .page {
+        background: darkblue;
+        overflow: auto;
+        margin-left: 20%;
+        min-height: 100vh;
+        padding: 40px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      body {
+        margin : 0;
+        background-color: red;
+        background-image: url("README.jpeg");
+      }
+
+    </style>
   </head>
   <body>
-    <h1>Marcin Ruszczyk</h1>
+
+    <section class="page"> 
+      <h1>Marcin Ruszczyk</h1>
     <h2>Cześć!</h2>
-    <p>
-        Testy strony :  githubpage.io
-    </p>
+    <p>Testy strony : githubpage.io</p>
     <h3>Poczytaj</h3>
-    <ul>
-      <li>Blog</li>
-      <li>Email</li>
-      <li>Newsletter</li>
-    </ul>
 
-    <h3>Pingnij mnie</h3>
-    <ul>
-      <li>Twitter</li>
-      <li>Instagram</li>
-      <li>Dribbble</li>
-    </ul>
+   <section class="links">
+    <section>
+      <ul>
+        <li>Blog</li>
+        <li>Email</li>
+        <li>Newsletter</li>
+      </ul>
+    </section>
 
-    <h3>Zobacz</h3>
-    <ul>
-      <li>Projekt 1</li>
-      <li>Projekt 2</li>
-      <li>Projekt 3</li>
-    </ul>
+    <section>
+      <h3>Pingnij mnie</h3>
+      <ul>
+        <li>Twitter</li>
+        <li>Instagram</li>
+        <li>Dribbble</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Zobacz</h3>
+      <ul>
+        <li>Projekt 1</li>
+        <li>Projekt 2</li>
+        <li>Projekt 3</li>
+      </ul>
+    </section>
+   </section>
 
     <footer>
       <p>&copy;2021 - Marcin Ruszczyk</p>
     </footer>
+    </section>
+
+
+    
   </body>
 </html>
